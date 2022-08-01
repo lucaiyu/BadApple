@@ -15,8 +15,7 @@ class BadApple extends JFrame {
 	private Listener listener;
 
 	public BadApple() {
-		music = Applet
-				.newAudioClip(this.getClass().getResource("BadApple.wav"));
+		music = Applet.newAudioClip(this.getClass().getResource("BadApple.wav"));
 		listener = new Listener();
 		getContentPane().add(listener);
 		timer = new javax.swing.Timer(32, listener);
